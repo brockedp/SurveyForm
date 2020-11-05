@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+</head>
+    
+<style>
+    body{
+        background-image: url("https://content.api.news/v3/images/bin/ddd4be3b1babe683ea24575f9e841241?width=650");
+        background-blend-mode: soft-light;
+    }
+    .cool-stuff{
+        font-family: fantasy;
+        font-size: 14pt;
+        color:cadetblue;
+        background-color: aliceblue;
+        width:600px;
+        height: auto;
+    }
+    
+</style>
+<body>
+    <h1 id="title">Meaningless Survey</h1>
+    <p id="description"> This survey is like points on the show <i>Whose's Line is It Anyway</i> where it is all made up and it doesn't matter </p>
+    <form id="survey-form">
+        <label id="name-label">Name:</label>
+        <input id="name" type="text" required placeholder="Enter your name"/>
+        <br/>
+        <label id="email-label">Email:</label>
+        <input id="email" type="email" required placeholder="Enter a email"/>
+        <br/>
+        <label id="number-label">Number:</label>
+        <input style="width:200px;"id="number" min=0 max=20 type=number placeholder="Enter your favorite number" required/>
+        <br/>
+        <label>Please choose a drink you like:</label>
+        <select id="dropdown">
+            <option></option>
+            <option value="beer">beer</option>
+            <option value="wine">wine</option>
+            <option value="coffee">coffee</option>
+            <option value="tea">tea</option>
+            <option value="water">water</option>
+        </select>
+        <br/>
+        <div>
+            <label>Select an option below:</label>
+            <br/>
+            <input type="radio" name="food" value="pizza"/>
+            <label>Pizza</label>
+            <br/>
+            <input type="radio" name="food" value="cknWings"/>
+            <label>Chicken Wings</label>
+            <br/>
+            <input type="radio" name="food" value="cauliflowerWings"/>
+            <label>Cauliflower Wings</label>
+            <br/>
+            <input type="radio" name="food" value="nachos"/>
+            <label>Nachos</label>
+        </div>
+        <div>
+            <label>Check the following you enjoy:</label>
+            <br/>
+            <input type=checkbox name="activity" value="hiking"/>
+            <label>Hiking</label>
+            <br/>
+            <input type=checkbox name="activity" value="reading"/>
+            <label>Reading</label>
+            <br/>
+            <input type=checkbox name="activity" value="webSurfing"/>
+            <label>Surfing the web</label>
+            <br/>
+            <input type=checkbox name="activity" value="cooking"/>
+            <label>Cooking</label>
+        </div>
+        <br/>
+        <label>Additional comments:</label>
+        <br/>
+        <textarea class="cool-stuff" placeholder="Try to make us laugh"></textarea>
+        <br/>
+        <button class="cool-stuff" type="submit" id="submit" >Send us your data!!!</button>
+        
+    </form>
+</body>
+</html>
